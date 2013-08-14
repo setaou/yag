@@ -1,0 +1,3 @@
+We can put anything in here...<br/>
+Pictures for example :<br/>
+<img src="https://farm3.staticflickr.com/2894/10383950794_b5bdb0bf11_q.jpg" alt="Picture !" />

@@ -1,0 +1,3 @@
+Hey, we have a long description here !<br />
+Nice, uh ?<br/>
+It even supports <strong>HTML</strong> and <span style="text-decoration: underline">CSS</span> <i>formatting</i> !

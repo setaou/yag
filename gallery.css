@@ -1,0 +1,175 @@
+/***** Overall container *****/
+
+div.gallery {
+  margin: 5px auto;
+  padding: 5px;
+  background: #8C8C8C;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+div.gallery img {
+  border: 0px;
+}
+
+/***** Thumbnails gallery *****/
+
+div.gallery .YAG-thumbs {
+  overflow: hidden;
+  position: relative;
+
+  background: #DCDCDC;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+div.gallery .YAG-thumbs ul {
+  position: relative;
+
+  padding: 0px;
+  margin: 0px;
+}
+
+div.gallery .YAG-thumbs li {
+  float: left;
+  list-style: none;
+  position: relative;
+
+  margin: 0px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+div.gallery .YAG-thumbs img {
+  position: relative;
+}
+
+/***** Viewport *****/
+
+div.gallery .YAG-viewport {
+  position: relative;
+  overflow: hidden;
+
+  height: 500px;
+  margin-bottom: 5px;
+  background: #DCDCDC;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+div.gallery .YAG-viewport img {
+    margin: 10px;
+}
+
+
+/***** Info Box *****/
+
+div.gallery .YAG-infobox {
+  position: absolute;
+  width: 100%;
+  z-index: 70;
+  bottom: 0px;
+}
+
+div.gallery .YAG-infobox-overlay {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  z-index: -1;
+
+  background: #262626;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+div.gallery .YAG-infobox-content {
+  color: #FFFFFF;
+}
+
+div.gallery .YAG-infobox-content>div {
+  padding: 5px 0px;
+  margin: 0px 10px;
+}
+
+div.gallery .YAG-infobox-content .YAG-description {
+  border-top: 1px solid #D3D3D3;
+}
+
+div.gallery .YAG-infobox-content .YAG-title {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14pt;
+  text-align: center;
+}
+
+/***** Forward/Backward buttons *****/
+
+div.gallery .YAG-button-forward, div.gallery .YAG-button-backward {
+  position: absolute;
+  z-index: 50;
+
+  height: 100%;
+  width: 24px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.gallery .YAG-button-backward {
+  left: 0;
+
+  background-image: url(btn-left.png);
+}
+
+div.gallery .YAG-button-forward {
+  right: 0;
+
+  background-image: url(btn-right.png);
+}
+
+/***** Spinners *****/
+
+div.gallery .YAG-spinner {
+  position: absolute;
+  z-index: 80;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center
+}
+
+div.gallery .YAG-viewport .YAG-spinner {
+  background-image: url(loading.gif);
+}
+
+div.gallery .YAG-thumbs .YAG-spinner {
+  background-image: url(loading2.gif);
+}
+
+/***** Real-size display *****/
+
+div.YAG-realsize div.YAG-overlay {
+    z-index: 90;
+    background: #000000
+}
+
+div.YAG-realsize div.YAG-frame {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  z-index: 100;
+  background: #FFFFFF;
+  padding: 10px;
+}
+
+div.YAG-realsize div.YAG-title {
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+  font-style: italic;
+}
