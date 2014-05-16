@@ -4,6 +4,8 @@
 This jQuery plug-in transforms an unordered list of thumbails into a much prettier dynamic gallery.
 It supports mouse wheel to browse the gallery, long descriptions fetched from URL, and full size view into a lightbox.
 
+Demo website : http://htmlpreview.github.io/?https://github.com/setaou/yag/blob/master/index.html
+
 How to use
 ----------
 
