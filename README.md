@@ -1,4 +1,4 @@
-YAG - Yet Another Gallery for jQuery
+﻿YAG - Yet Another Gallery for jQuery
 ====================================
 
 This jQuery plug-in transforms an unordered list of thumbails into a much prettier dynamic gallery.
@@ -27,39 +27,39 @@ It is easy to style the gallery. Good knowledge of CSS is still required to unde
 
 Here is the DOM tree before YAG is applied :
 
-    ul.gallery                        Liste non ordonnée
-     ├li                              Element de la liste
-     │ └a                             Lien vers l'image en pleine taille
-     │   └img                         Miniature de l'image
+    ul.gallery                        Unordered list
+     ├li                              List item
+     │ └a                             Link to full size picture
+     │   └img                         Thumbnail
      ├...                             ...
 
 And here is the DOM after YAG has transformed it :
 
-    div.gallery                       Conteneur principal
-     ├div.YAG-viewport                Zone de visualisation
-     │ ├div.YAG-spinner               Témoin de chargement
-     │ ├div.YAG-infobox               Boîte d'informations
-     │ │ ├div.YAG-infobox-overlay     Fond translucide de la boîte d'information
-     │ │ └div.YAG-infobox-content     Contenu de la boîte d'information
-     │ │   ├div.YAG-title             Titre de l'image
-     │ │   └div.YAG-content           Description de l'image
-     │ └img                           Image
-     └div.YAG-thumbs                  Galerie de miniatures
-       ├div.YAG-spinner               Témoin de chargement
-       ├div.YAG-button-backward       Bouton "retour"
-       ├div.YAG-button-forward        Bouton "avance"
-       └ul                            Liste non ordonnée
-         ├li                          Element de la liste
-         │ └a                         Lien vers l'image en pleine taille
-         │   └img                     Miniature de l'image
+    div.gallery                       Main container
+     ├div.YAG-viewport                Viewport
+     │ ├div.YAG-spinner               Loading indicator
+     │ ├div.YAG-infobox               Information box
+     │ │ ├div.YAG-infobox-overlay     Translucent background
+     │ │ └div.YAG-infobox-content     Information box content
+     │ │   ├div.YAG-title             Picture title
+     │ │   └div.YAG-content           Picture caption
+     │ └img                           Picture
+     └div.YAG-thumbs                  Thumbnails gallery
+       ├div.YAG-spinner               Loading indicator
+       ├div.YAG-button-backward       Backward button
+       ├div.YAG-button-forward        Forward button
+       └ul                            Unordered list
+         ├li                          List item
+         │ └a                         Link to full size picture
+         │   └img                     Thumbnail
          ├...                         ...
 
 Note that the original unordered list has given its classes to the main container. It is thus easy to reference it to apply specific styles to the gallery. In this example the class "gallery" has been used but you can change it as you like (be sure to adapt the main stylesheet).
 
 Here is the DOM tree of the lightbox used for full size view :
 
-    div.YAG-gallery-realsize          Conteneur principal
-     ├div.YAG-overlay                 Fond translucide
-     └div.YAG-frame                   Cadre entourant l'image
-       ├img                           Image
-       └div.YAG-title                 Titre de l'image
+    div.YAG-gallery-realsize          Main container
+     ├div.YAG-overlay                 Translucent background
+     └div.YAG-frame                   Frame around the picture
+       ├img                           Full size picture
+       └div.YAG-title                 Picture caption
